@@ -1,0 +1,246 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin: 0 auto;
+  
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body{
+  text-align: center;
+  background: #EFF1FF;
+  
+
+  
+}
+h1, h2{
+  font-family: Staatliches;
+  font-weight: 400;
+}
+
+header img{
+  margin-top: 3.2rem;
+  margin-bottom: 2.6rem;
+}
+h1 {
+  
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  line-height: 34px;
+  font-weight: 400;
+  color: white;
+  background-color:  #CBC0D3;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+}
+
+
+p{
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  width: 30.5rem;
+
+  margin-bottom: 6.3rem;
+}
+
+header{
+  position: relative;
+  min-width: 314px
+}
+header::before{
+  content:'';
+  background: #8E9AAF;
+  width: 100%;
+  display: block;
+  height: 27.9rem;
+  position: absolute;
+  z-index: -1;
+  
+  
+}
+
+
+
+.img p{
+  background: #FEEAFA;
+  border-radius: 20px;
+  width: 11.2rem;
+  height: 3.5rem;
+  text-align: center;
+  color: hsla(232, 17%, 35%, 1)  ;
+  position: absolute;
+  font-family: Staatliches;
+  font-weight: 400;
+  top: 1.6rem;
+  right: 1.6rem;
+  top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: texto 0.7s ease-in-out;
+  
+  
+}
+.img {
+  position: relative;
+  max-width: 32rem;
+  min-width: 20rem;
+  margin-bottom: 3.6rem;
+  animation: imagem 0.7s ease-in-out;
+  
+}
+
+footer{
+  font-family: Staatliches;
+  font-weight: 400;
+  color: hsla(232, 17%, 35%, 1);
+  margin-top: 5rem;
+  font-size: 1.4rem;
+
+}
+
+a{
+  color: currentColor;
+  text-decoration: none;
+}
+
+
+
+  @keyframes imagem {
+  from {
+    
+    transform: translateY(35px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+  
+  }
+
+
+ 
+  @media (min-width: 769px ){
+    body{
+      background: white;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      min-height: 900px;
+    }
+    .grid1 {
+      background-color: #8E9AAF;
+      width: 37.7rem;
+      height: 100%;
+    
+      margin-left: 0;
+    
+    }
+
+   
+    p {
+      color: white;
+      font-size: 1.8rem;
+      font-family: 'Roboto', sans-serif;
+
+    }
+    .test{
+      margin-top: 64px;
+    }
+    .page img:hover{
+      animation: figura .5s forwards;
+    }
+
+    .page img {
+      width: 22rem;
+      height: 100%;       
+    }
+    .page {
+      
+      background: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      
+      grid-template-areas: "A B C" "D B F" "D E F";
+      gap: 3.2rem;
+      max-height: 53.2rem;
+      width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      
+    }
+    .img:nth-child(6){
+   
+    grid-area: F;
+      
+    }
+    .img:nth-child(5){
+    grid-area: E;
+      
+    }
+    .img:nth-child(4){
+   
+    grid-area: D;
+      
+    }
+    .img:nth-child(3){
+   
+    grid-area: C;
+    }
+    .img:nth-child(2){
+    
+    grid-area: B;     
+    }
+
+    .img:nth-child(1){
+    grid-area: A;
+    }
+    
+  
+    .img{
+      margin-bottom: 0;
+    }
+
+    .img p{
+      opacity: 0;
+    }
+    .img p:hover{
+      animation: opacidade 2s;
+    }
+
+
+    
+    a:hover{
+      color: purple;
+    }
+  
+    @keyframes opacidade {
+      0% {opacity: 0;
+      transform: translateY(0);}
+      
+      100% {opacity:1;
+        transform: translateY(100%)}
+     }
+
+    @keyframes figura {
+      from {
+        
+        transform: scale(1);
+        opacity: 0;
+      }
+    
+      to {
+        transform: scale(1.1);
+        opacity: .5;
+      }
+      
+      }
+  }
